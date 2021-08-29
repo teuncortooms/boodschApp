@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using boodschApplication.Entities;
+using System.Collections.Generic;
 
 namespace boodschApplication.Interfaces
 {

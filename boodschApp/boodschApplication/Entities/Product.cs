@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace boodschApplication
+namespace boodschApplication.Entities
 {
     public class Product
     {

@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "<Pending>", Scope = "member", Target = "~M:boodschApplication.Services.ShoppingItemFactory.CreateItem(System.String,System.Int32)~boodschApplication.ShoppingItem")]
+[assembly: SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "<Pending>", Scope = "member", Target = "~M:boodschApplication.Services.ShoppingItemFactory.CreateItem(System.String,System.Int32)~boodschApplication.Entities.ShoppingItem")]

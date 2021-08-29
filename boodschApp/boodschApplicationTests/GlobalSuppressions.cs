@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "<Pending>", Scope = "member", Target = "~M:boodschApplication.Entities.Tests.ShoppingListTests.Create_Shopping_List(System.Collections.Generic.List{boodschApplication.ShoppingItem})~boodschApplication.Entities.ShoppingList")]
+[assembly: SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "<Pending>", Scope = "member", Target = "~M:boodschApplication.Entities.Tests.ShoppingListTests.Create_Shopping_List_With_Mock_Repo(System.Collections.Generic.List{boodschApplication.Entities.ShoppingItem})~boodschApplication.Interactors.ShoppingList")]
