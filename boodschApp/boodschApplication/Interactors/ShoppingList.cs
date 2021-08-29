@@ -1,11 +1,12 @@
-﻿using boodschApplication.Interfaces;
+﻿using boodschApplication.Entities;
+using boodschApplication.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace boodschApplication.Entities
+namespace boodschApplication.Interactors
 {
     public class ShoppingList
     {
@@ -13,7 +14,12 @@ namespace boodschApplication.Entities
 
         public ShoppingList(IShoppingItemRepository repository)
         {
-            this.repository = repository;
+            this.repository = repository ?? throw new ArgumentNullException(nameof(repository));
+        }
+
+        public List<ShoppingItem> GetItems()
+        {
+            return repository.ShoppingItems;
         }
 
         public void AddItem(ShoppingItem item)

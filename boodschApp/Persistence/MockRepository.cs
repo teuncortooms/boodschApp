@@ -1,4 +1,5 @@
 ﻿using boodschApplication;
+using boodschApplication.Entities;
 using boodschApplication.Interfaces;
 using boodschApplication.Services;
 using System;
@@ -14,7 +15,7 @@ namespace Persistence
         public MockRepository(ShoppingItemFactory factory)
         {
             this.factory = factory;
-
+            this.ShoppingItems = new();
             AddTestData();
         }
 
@@ -22,7 +23,7 @@ namespace Persistence
         {
             string[] items = { "Apple", "Cola bottle", "Carrot", "Pair of socks", "Spoon" };
 
-            Random r = new Random();
+            Random r = new();
 
             foreach (string item in items)
             {
@@ -30,10 +31,12 @@ namespace Persistence
                 AddItem(factory.CreateItem(item, quantity));
             }
         }
-
+        
         public void AddItem(ShoppingItem item)
         {
+            if (item == null) throw new ArgumentNullException(nameof(item));
             ShoppingItems.Add(item);
         }
+
     }
 }
