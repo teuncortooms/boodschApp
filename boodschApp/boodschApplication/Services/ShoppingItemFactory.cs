@@ -8,9 +8,9 @@ namespace boodschApplication.Services
 {
     public class ShoppingItemFactory
     {
-        public ShoppingItem CreateItem(string name, int quantity)
+        public ShoppingItem CreateItem(string description, int quantity)
         {
-            return new ShoppingItem(new Product(name), quantity);
+            return new ShoppingItem(description, quantity);
         }
     }
 }

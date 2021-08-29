@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "boodschAPI", "boodschAPI\boodschAPI.csproj", "{F426CF3E-4B04-44C4-A178-E7F6F0BEA29A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "boodschAPI", "boodschAPI\boodschAPI.csproj", "{F426CF3E-4B04-44C4-A178-E7F6F0BEA29A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{48966E86-F0E9-41D0-AC25-76682A78DE72}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{48966E86-F0E9-41D0-AC25-76682A78DE72}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3BC286C6-1EAC-4861-B353-8F27FE72D258}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{AFCFA457-774D-4877-98F0-08A3D56FCA0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "boodschApplication", "boodschApplication\boodschApplication.csproj", "{24966CB2-FB78-429E-9B32-C67E755A0FE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "boodschApplication", "boodschApplication\boodschApplication.csproj", "{24966CB2-FB78-429E-9B32-C67E755A0FE9}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "boodschAngular", "boodschAngular\", "{C42960D7-2417-423F-8438-8A6764D95B42}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -34,7 +34,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "boodschAngular", "boodschAn
 		SlnRelativePath = "boodschAngular\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{F314D459-BE7B-40E9-81A7-450DF93089F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{F314D459-BE7B-40E9-81A7-450DF93089F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "boodschApplicationTests", "boodschApplicationTests\boodschApplicationTests.csproj", "{F84DA376-3A25-44EA-AA70-752CA2D6B18C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{38BC6E5E-A614-4618-A5DA-EBA4B2A40CA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +62,10 @@ Global
 		{F314D459-BE7B-40E9-81A7-450DF93089F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F314D459-BE7B-40E9-81A7-450DF93089F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F314D459-BE7B-40E9-81A7-450DF93089F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84DA376-3A25-44EA-AA70-752CA2D6B18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84DA376-3A25-44EA-AA70-752CA2D6B18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84DA376-3A25-44EA-AA70-752CA2D6B18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84DA376-3A25-44EA-AA70-752CA2D6B18C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +75,7 @@ Global
 		{24966CB2-FB78-429E-9B32-C67E755A0FE9} = {3BC286C6-1EAC-4861-B353-8F27FE72D258}
 		{C42960D7-2417-423F-8438-8A6764D95B42} = {48966E86-F0E9-41D0-AC25-76682A78DE72}
 		{F314D459-BE7B-40E9-81A7-450DF93089F2} = {AFCFA457-774D-4877-98F0-08A3D56FCA0C}
+		{F84DA376-3A25-44EA-AA70-752CA2D6B18C} = {38BC6E5E-A614-4618-A5DA-EBA4B2A40CA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BA0A2460-7515-49C2-B583-7B43DF06E606}

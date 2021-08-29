@@ -30,10 +30,11 @@ namespace Persistence
                 AddItem(factory.CreateItem(item, quantity));
             }
         }
-
+        
         public void AddItem(ShoppingItem item)
         {
             ShoppingItems.Add(item);
         }
+
     }
 }

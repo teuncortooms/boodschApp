@@ -13,7 +13,13 @@ namespace boodschApplication.Entities
 
         public ShoppingList(IShoppingItemRepository repository)
         {
+            if (repository == null) throw new ArgumentNullException();
             this.repository = repository;
+        }
+
+        public List<ShoppingItem> GetItems()
+        {
+            return repository.ShoppingItems;
         }
 
         public void AddItem(ShoppingItem item)
