@@ -12,12 +12,12 @@ namespace boodschAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ShoppingItemController : ControllerBase
+    public class ShoppingItemsController : ControllerBase
     {
-        private readonly ILogger<ShoppingItemController> _logger;
+        private readonly ILogger<ShoppingItemsController> _logger;
         private readonly ShoppingList shoppinglist;
 
-        public ShoppingItemController(ILogger<ShoppingItemController> logger, ShoppingList shoppinglist)
+        public ShoppingItemsController(ILogger<ShoppingItemsController> logger, ShoppingList shoppinglist)
         {
             _logger = logger;
             this.shoppinglist = shoppinglist;
@@ -26,6 +26,8 @@ namespace boodschAPI.Controllers
         [HttpGet]
         public IEnumerable<ShoppingItem> Get()
         {
+            _logger.LogInformation("Retrieving items...");
+            
             return shoppinglist.GetItems();
         }
     }

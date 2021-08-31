@@ -36,6 +36,15 @@ namespace boodschAPI
 
             services.AddPersistence();
             services.AddApplication();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("DevPolicy",
+                  builder => builder.WithOrigins("http://localhost:4200") // FIXME:
+                  .AllowAnyMethod()
+                  .AllowAnyHeader()
+                  .AllowCredentials());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,12 +55,11 @@ namespace boodschAPI
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "boodschAPI v1"));
+                app.UseCors("DevPolicy");
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
