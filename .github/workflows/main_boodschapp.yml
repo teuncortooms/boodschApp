@@ -12,6 +12,9 @@ jobs:
   build-and-deploy:
     runs-on: windows-latest
 
+    env:
+      projectPath: ../../boodschApp/boodschAPI/boodschAPI.csproj
+  
     steps:
     # checkout the repo
     - name: 'Checkout Github Action'
@@ -24,7 +27,7 @@ jobs:
         dotnet-version: '5.0.x'
 
     - name: Build with dotnet
-      run: dotnet build --configuration Release
+      run: dotnet build --configuration Release {{projectPath}}
 
     - name: dotnet publish
       run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
