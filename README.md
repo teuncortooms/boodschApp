@@ -19,7 +19,7 @@ Bij het afsluiten van de applicatie hoeft de lijst niet te worden onthouden. De 
 
 ## JS framework
 
-Ik had al een beetje ervaring met React en Vue, maar nog niet met Angular. Mijn werkgever maakt er gebruik van, dus wilde ik er graag mee experimenteren. Bovendien heb ik ervaring met TypeScript en omarm ik graag de hulp van de compiler van deze statically typed taal.
+Ik had al een beetje ervaring met React en Vue, maar nog niet met Angular. Mijn werkgever maakt er gebruik van, dus wilde ik er graag mee experimenteren. Bovendien heb ik ervaring met TypeScript en omarm ik graag de hulp van de compiler van deze strictly typed taal.
 
 ### Voordelen Angular
 
