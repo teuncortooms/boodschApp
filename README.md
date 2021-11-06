@@ -23,7 +23,7 @@ Ik had al een beetje ervaring met React en Vue, maar nog niet met Angular. Mijn 
 
 ### Voordelen Angular
 
-- statically typed
+- strictly typed
 
 ### Nadelen Angular
 
